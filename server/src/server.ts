@@ -1,12 +1,9 @@
 import express from "express";
+import routes from "./route";
 
 const app = express();
+
 app.use(express.json());
-
-app.post("/users", (req, res) => {
-    console.log("acessou a rota");
-
-    res.json({"derp": 1});
-})
+app.use(routes);
 
 app.listen(3333)
