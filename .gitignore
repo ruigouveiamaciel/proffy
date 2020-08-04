@@ -47,3 +47,6 @@
 /server/npm-debug.log*
 /server/yarn-debug.log*
 /server/yarn-error.log*
+
+# database
+/server/src/database/database.sqlite
